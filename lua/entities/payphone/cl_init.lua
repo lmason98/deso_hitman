@@ -25,8 +25,8 @@ function ENT:Draw()
 
 	if (distance < 210) then
 		cam.Start3D2D(pos + ang:Up() * 8 + ang:Forward() * -25 + ang:Right() * -45, ang, 0.1)
-			draw.SimpleTextOutlined("Place a hit!", "deso_hud_clip", 255, 25, text, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER, 2, outline)
-			draw.SimpleTextOutlined("[E]", "deso_hud_clip", 255, 250, white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER, 2, outline)
+			draw.SimpleTextOutlined("Place a hit!", "deso_ent_black", 255, 25, text, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER, 2, outline)
+			draw.SimpleTextOutlined("[E]", "deso_ent_bold", 255, 250, white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER, 2, outline)
 		cam.End3D2D()
 	end
 end

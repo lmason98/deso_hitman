@@ -19,10 +19,11 @@ end
 
 /*---------------------------------------------------------
    Name: ENT:Use()
-   Desc: Opens the place hit derma frame
+   Desc: Sends a message to client to open the derma frame
 ---------------------------------------------------------*/
 function ENT:Use(activator, caller)
 	if (caller && caller:IsPlayer()) then
-		deso.hit.OpenPlaceHitDerma(caller)
+		net.Start("desohit_open_placehit_pnl")
+		net.Send(caller)
 	end
 end
